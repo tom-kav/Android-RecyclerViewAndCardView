@@ -1,0 +1,80 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignStart="@+id/txtSurname"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surname"
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:layout_below="@id/txtName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="13dp"
+            android:layout_marginRight="150dp"
+            android:layout_below="@+id/txtSurname"
+            android:layout_alignStart="@+id/txtSurname"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/phone"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/txtNumber"
+            android:layout_alignParentEnd="true" />
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:id="@+id/button"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignTop="@+id/txtNumber"
+            android:layout_alignParentEnd="true" />-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
